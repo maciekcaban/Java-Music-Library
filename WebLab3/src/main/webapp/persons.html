@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <script type="text/javascript" src="js/ajax.js"></script>
+         <link rel="stylesheet" href="css/main.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+  
+        <h1>Music Library34</h1>
+        
+        <!-- section with load -->
+        <!--<input type="button" id="loadButt" value="Load" onClick="getTableLoad('pathToLoad','tablePersons');" />-->
+        <!--<b>Path</b>-->
+        <!--<input type="text" size=60 id="pathToLoad" name="pathToLoad" /> -->
+        <!--<br>-->
+        
+        <!-- section with show and show filtered -->
+        <input type="button" id="test" value="Show (with filter) " onClick="getTable('firstName','secondName', 'tablePersons');" />
+        <b>Column name</b>
+        <input type="text" id="firstName" name="firstName" /> 
+        <b>Value</b>
+        <input type="text" id="secondName" name="secondName" />   
+        <br>
+        
+        <!-- section  with adding -->
+        <input type="button" id="test2" value="Add" onClick="getTableAdd('addName','addAuthor', 'addGenre', 'addYear','addLan', 'addComm', 'addHolder', 'tablePersons');" />
+        <b>Album Name</b>
+        <input type="text" id="addName" name="addName" /> 
+        <b>Author</b>
+        <input type="text" id="addAuthor" name="addAuthor" />  
+        <b>Music Genre</b>
+        <input type="text" id="addGenre" name="addGenre" /> 
+        <b>Release Year</b>
+        <input type="text" id="addYear" name="addYear" />  
+        <b>Language</b>
+        <input type="text" id="addLan" name="addLan" /> 
+        <b>Comment</b>
+        <input type="text" id="addComm" name="addComm" />  
+        <b>Holder</b>
+        <input type="text" id="addHolder" name="addHolder" />         
+        <br>
+        
+        
+        <!-- section with remove -->
+        <input type="button" id="removeButt" value="Remove" onClick="getTableRemove('removeId','tablePersons');" />
+        <b>Id of removing album</b>
+        <input type="text" id="removeId" name="removeId" /> 
+        <br>
+        
+        <!-- section with save -->
+        <input type="button" id="saveButt" value="Save" onClick="getTableSave('pathToSave','tablePersons');" />
+        <b>Path</b>
+        <input type="text" size=60 id="pathToSave" name="pathToSave" /> 
+        <br>
+        
+        <br>
+        <table>
+            <thead>                
+                <tr>
+                    <th>id</th>
+                    <th>Album_Title</th>
+                    <th>Album_Author</th>    
+                    <th>Genre</th>
+                    <th>Release_Year)</th>
+                    <th>Language</th>
+                    <th>comm</th>
+                    <th>holder</th> 
+                </tr>
+            </thead>            
+            <tbody id="tablePersons">
+            </tbody>            
+        </table>
+         
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <script type="text/javascript" src="js/ajax.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        
+        <h1>showLibrary</h1>
+        <table>
+            <thead>                
+                <tr>
+                    <th>ID</th>
+                    <th>Album title</th>
+                    <th>Author</th>    
+                    <th>music genre</th>
+                    <th>release year</th>
+                    <th>language</th>
+                    <th>comments</th>
+                    <th>holder</th>
+                </tr>
+            </thead>            
+            <tbody id="showLibraryTable">
+            </tbody>            
+        </table>
+         
+        <input type="text" id="firstName" name="firstName" />         
+        <input type="button" id="test" value="Show Library" onClick="getLibraryTable('ID', 'showLibraryTable');" />
+        
+    </body>
+</html>
